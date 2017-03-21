@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" text="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Picker</h1>
+      <p>Use the drop down menus to select what movie you would like to see, when you would like to see it, and your age group. It will calculate the price of your ticket(s).</p>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="movie" id="movie">Movie</label>
+          <select class="form-control">
+            <option>Action Movie</option>
+            <option>RomCom</option>
+            <option>Horror</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time" id="time">Time</label>
+          <select class="form-control">
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age" id="age">Age</label>
+          <select class="form-control">
+            <option>Children (under 18)</option>
+            <option>Adults (18+)</option>
+            <option>Senior (55+)</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
