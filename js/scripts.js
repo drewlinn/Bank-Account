@@ -14,12 +14,15 @@ $(document).ready(function() {
     var inputTime = $("#time").val();
     var inputAge = $("#age").val();
     var newPrice = new Ticket(inputMovie, inputTime, inputAge);
+    console.log(newPrice);
+    console.log(newPrice.movie);
 
-    if (Ticket.movie === "RomCom" || Ticket.time === "Morning" || Ticket.age === "Senior (55+)"){
+    if (newPrice.movie === "RomCom" || newPrice.time === "Afternoon" || newPrice.age === "Senior (55+)"){
       $(".result").text("$7");
     } else {
       $(".result").text("$9");
-    }
-
+    };
   });
 });
+
+// || Ticket.time === "Morning" || Ticket.age === "Senior (55+)"
