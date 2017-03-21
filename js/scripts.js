@@ -6,8 +6,6 @@ function Ticket(movie, time, age) {
 }
 
 
-
-
 //user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -16,6 +14,12 @@ $(document).ready(function() {
     var inputTime = $("#time").val();
     var inputAge = $("#age").val();
     var newPrice = new Ticket(inputMovie, inputTime, inputAge);
-    console.log(newPrice);
+
+    if (Ticket.movie === "RomCom" || Ticket.time === "Morning" || Ticket.age === "Senior (55+)"){
+      $(".result").text("$7");
+    } else {
+      $(".result").text("$9");
+    }
+
   });
 });
